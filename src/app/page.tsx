@@ -14,7 +14,10 @@ export default function Home() {
   const debouncedA = useDebouncedValue(textA, 150);
   const debouncedB = useDebouncedValue(textB, 150);
 
-  const options: NormalizeOptions = { trim, caseInsensitive };
+  const options: NormalizeOptions = useMemo(
+    () => ({ trim, caseInsensitive }),
+    [trim, caseInsensitive]
+  );
 
   const results = useMemo(() => {
     const linesA = splitLines(debouncedA);
@@ -38,9 +41,7 @@ export default function Home() {
     };
   }, [debouncedA, debouncedB, options]);
 
-  const [showMatches, setShowMatches] = useState(false);
-  const [showOnlyA, setShowOnlyA] = useState(false);
-  const [showOnlyB, setShowOnlyB] = useState(false);
+  // no expandable lists; copy-only chips
 
   return (
     <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6">
@@ -135,7 +136,6 @@ function CopyChips({
 
   function getOriginalList(keys: Set<string>): string[] {
     // Prefer originals from A, fall back to B
-    const { splitLines, toUniqueSet } = require("@/lib/parse");
     const a = toUniqueSet(splitLines(textA), options);
     const b = toUniqueSet(splitLines(textB), options);
     const out: string[] = [];
