@@ -5,12 +5,19 @@ import { splitLines, toUniqueSet } from "@/lib/parse";
 import { setDifference, setIntersection } from "@/lib/compare";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
 import { NormalizeOptions, CompanyCheckingResult } from "@/types";
+import TopLeftNav from "@/components/navigation/TopLeftNav";
 
 export default function Home() {
   const [textA, setTextA] = useState("");
   const [textB, setTextB] = useState("");
   const [trim, setTrim] = useState(false);
   const [caseInsensitive, setCaseInsensitive] = useState(false);
+
+  // Navigation items for this page
+  const navItems = [
+    { id: "network-commit", label: "NETWORK UPLOAD", href: "/network-commit" },
+    { id: "company-checking", label: "PEOPLE CHECKING", href: "/company-checking" },
+  ];
 
   const debouncedA = useDebouncedValue(textA, 150);
   const debouncedB = useDebouncedValue(textB, 150);
@@ -45,8 +52,13 @@ export default function Home() {
   // no expandable lists; copy-only chips
 
   return (
-    <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6">
-      <div className="mx-auto max-w-6xl">
+    <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6 flex flex-col items-center">
+      {/* Top Left Navigation */}
+      <div className="absolute top-[40px] left-6">
+        <TopLeftNav items={navItems} />
+      </div>
+      
+      <div className="w-full max-w-4xl flex-1 flex flex-col justify-center">
         {/* Top controls removed (moved under right input) */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -58,7 +70,7 @@ export default function Home() {
               value={textA}
               onChange={(e) => setTextA(e.target.value)}
               placeholder={`Paste company names here, one per line`}
-              className="w-full h-[50vh] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
+              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
             />
           </section>
 
@@ -70,7 +82,7 @@ export default function Home() {
               value={textB}
               onChange={(e) => setTextB(e.target.value)}
               placeholder={`Paste company names here, one per line`}
-              className="w-full h-[50vh] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
+              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
             />
           </section>
         </div>

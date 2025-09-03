@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import TopLeftNav from "@/components/navigation/TopLeftNav";
 
 export default function NetworkCommit() {
   const [headers, setHeaders] = useState<string[]>([]);
@@ -9,6 +10,12 @@ export default function NetworkCommit() {
   const [headerMappings, setHeaderMappings] = useState<Record<string, 'Company name' | 'Person Email' | null>>({});
   const [checkedHeaders, setCheckedHeaders] = useState<Set<number>>(new Set());
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Navigation items for this page
+  const navItems = [
+    { id: "network-commit", label: "NETWORK UPLOAD", href: "/network-commit" },
+    { id: "company-checking", label: "PEOPLE CHECKING", href: "/company-checking" },
+  ];
 
   // Reset function to return to initial state
   const resetToInitialState = () => {
@@ -58,20 +65,29 @@ export default function NetworkCommit() {
   };
 
   return (
-    <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6 flex items-center justify-center">
-      <label className="cursor-pointer">
+    <main className="h-screen max-h-screen bg-white dark:bg-black p-4 sm:p-6 overflow-hidden">
+      {/* Top Left Navigation */}
+      <div className="absolute top-[40px] left-6">
+        <TopLeftNav items={navItems} />
+      </div>
+      
+      {/* Main Content - Centered */}
+      <div className="flex items-center justify-center h-full">
+        <label className="cursor-pointer">
         <input
           type="file"
           accept=".csv"
           onChange={handleFileUpload}
           className="hidden"
         />
-        <span 
-          className="inline-block px-6 py-3 text-[12px] tracking-[0.03em] leading-[16px] font-light"
-        >
+        <div className="inline-flex items-center gap-[4px] px-6 py-3 text-[12px] tracking-[0.03em] leading-[16px] font-light">
+          <svg className="w-[12px] h-[12px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
           UPLOAD CSV FILE
-        </span>
+        </div>
       </label>
+      </div>
 
       {/* Popup Overlay */}
       {showPopup && (

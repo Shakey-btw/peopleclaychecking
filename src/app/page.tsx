@@ -1,16 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import TopLeftNav from "@/components/navigation/TopLeftNav";
 
 export default function Home() {
+  // Navigation items for this page
+  const navItems = [
+    { id: "network-commit", label: "NETWORK UPLOAD", href: "/network-commit" },
+    { id: "company-checking", label: "PEOPLE CHECKING", href: "/company-checking" },
+  ];
+
   return (
     <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6">
+      {/* Top Left Navigation */}
+      <div className="absolute top-[40px] left-6">
+        <TopLeftNav items={navItems} />
+      </div>
+      
       <div className="mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            People Clay Checking
-          </h1>
-        </div>
+        {/* Heading removed */}
       </div>
     </main>
   );
