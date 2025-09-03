@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { splitLines, toUniqueSet } from "@/lib/parse";
 import { setDifference, setIntersection } from "@/lib/compare";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
-import { NormalizeOptions, CompanyCheckingResult } from "@/types";
+import { NormalizeOptions } from "@/types";
 import TopLeftNav from "@/components/navigation/TopLeftNav";
 
 export default function Home() {

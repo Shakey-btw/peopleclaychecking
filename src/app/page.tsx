@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import TopLeftNav from "@/components/navigation/TopLeftNav";
 
 export default function Home() {

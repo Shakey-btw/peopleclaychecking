@@ -62,11 +62,13 @@ export default function TopLeftNav({ items, className = "" }: TopLeftNavProps) {
       {/* Navigation items */}
       <div className="flex flex-col items-start gap-[4px] pl-4">
         {items.map((item) => (
-          <div
-            key={item.id}
-            ref={(el) => (itemRefs.current[item.id] = el)}
-            className="relative"
-          >
+                      <div
+              key={item.id}
+              ref={(el) => {
+                itemRefs.current[item.id] = el;
+              }}
+              className="relative"
+            >
             <Link
               href={item.href}
               onClick={() => handleItemClick(item)}
