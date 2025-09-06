@@ -52,7 +52,7 @@ export default function Home() {
   // no expandable lists; copy-only chips
 
   return (
-    <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6 flex flex-col items-center">
+    <main className="min-h-screen bg-white p-4 sm:p-6 flex flex-col items-center">
       {/* Top Left Navigation */}
       <div className="absolute top-[40px] left-6">
         <TopLeftNav items={navItems} />
@@ -64,25 +64,25 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <section className="flex flex-col">
             <div className="mb-2">
-              <h2 className="text-xs tracking-wide uppercase font-normal text-gray-900 dark:text-gray-100">COMPANY LEVEL</h2>
+              <h2 className="text-xs tracking-wide uppercase font-normal text-gray-900">COMPANY LEVEL</h2>
             </div>
             <textarea
               value={textA}
               onChange={(e) => setTextA(e.target.value)}
               placeholder={`Paste company names here, one per line`}
-              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
+              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-gray-400 placeholder:text-gray-500"
             />
           </section>
 
           <section className="flex flex-col">
             <div className="mb-2">
-              <h2 className="text-xs tracking-wide uppercase font-normal text-gray-900 dark:text-gray-100">PEOPLE LEVEL</h2>
+              <h2 className="text-xs tracking-wide uppercase font-normal text-gray-900">PEOPLE LEVEL</h2>
             </div>
             <textarea
               value={textB}
               onChange={(e) => setTextB(e.target.value)}
               placeholder={`Paste company names here, one per line`}
-              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-500"
+              className="w-full h-[300px] resize-none font-mono whitespace-pre-wrap break-words p-3 rounded-none border border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-gray-400 placeholder:text-gray-500"
             />
           </section>
         </div>
@@ -98,11 +98,11 @@ export default function Home() {
           />
 
           <div className="hidden flex items-center justify-end gap-3">
-            <label className="flex items-center gap-2 text-[12px] text-gray-800 dark:text-gray-200">
+            <label className="flex items-center gap-2 text-[12px] text-gray-800">
               <input type="checkbox" className="h-4 w-4 accent-black" checked={trim} onChange={(e) => setTrim(e.target.checked)} />
               Trim spaces
             </label>
-            <label className="flex items-center gap-2 text-[12px] text-gray-800 dark:text-gray-200">
+            <label className="flex items-center gap-2 text-[12px] text-gray-800">
               <input
                 type="checkbox"
                 className="h-4 w-4 accent-black"
@@ -162,8 +162,8 @@ function CopyChips({
   }
 
   const base = "cursor-pointer rounded px-2 py-1 text-sm select-none transition-colors";
-  const normal = "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200";
-  const active = "bg-gray-200 dark:bg-gray-700"; // ~5-10% darker
+  const normal = "bg-gray-100 text-gray-800";
+  const active = "bg-gray-200"; // ~5-10% darker
 
   return (
     <div className={className ?? "mt-6 flex flex-wrap gap-3"}>

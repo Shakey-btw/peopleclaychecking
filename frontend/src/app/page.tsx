@@ -10,7 +10,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-white dark:bg-black p-4 sm:p-6">
+    <main className="min-h-screen bg-white p-4 sm:p-6">
       {/* Top Left Navigation */}
       <div className="absolute top-[40px] left-6">
         <TopLeftNav items={navItems} />

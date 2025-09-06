@@ -65,7 +65,7 @@ export default function NetworkCommit() {
   };
 
   return (
-    <main className="h-screen max-h-screen bg-white dark:bg-black p-4 sm:p-6 overflow-hidden">
+    <main className="h-screen max-h-screen bg-white p-4 sm:p-6 overflow-hidden">
       {/* Top Left Navigation */}
       <div className="absolute top-[40px] left-6">
         <TopLeftNav items={navItems} />
