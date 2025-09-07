@@ -108,6 +108,95 @@ class PipedriveClient:
         except Exception as e:
             logger.error(f"Failed to get organizations: {e}")
             raise
+    
+    def get_filter_details(self, filter_id: str) -> Dict[str, Any]:
+        """Get details of a specific filter"""
+        try:
+            logger.info(f"Fetching filter details for ID: {filter_id}")
+            response = self._make_request('GET', f'filters/{filter_id}')
+            filter_data = response.get('data', {})
+            logger.info(f"Retrieved filter: {filter_data.get('name', 'Unknown')}")
+            return filter_data
+        except Exception as e:
+            logger.error(f"Failed to get filter details for ID {filter_id}: {e}")
+            raise
+    
+    def get_organizations_by_filter(self, filter_id: str, start: int = 0, limit: int = 500) -> List[Dict[str, Any]]:
+        """Get organizations filtered by a specific filter ID"""
+        try:
+            logger.info(f"Fetching organizations with filter ID: {filter_id}")
+            all_organizations = []
+            start_index = start
+            
+            while True:
+                params = {
+                    'filter_id': filter_id,
+                    'start': start_index,
+                    'limit': limit
+                }
+                
+                response = self._make_request('GET', 'organizations', params=params)
+                organizations = response.get('data', [])
+                
+                if not organizations:
+                    break
+                
+                all_organizations.extend(organizations)
+                logger.info(f"Fetched {len(organizations)} filtered organizations (total: {len(all_organizations)})")
+                
+                # Check if there are more pages
+                additional_data = response.get('additional_data', {})
+                pagination = additional_data.get('pagination', {})
+                
+                if not pagination.get('more_items_in_collection', False):
+                    break
+                
+                start_index += limit
+                time.sleep(0.5)  # Rate limiting protection
+            
+            logger.info(f"Total filtered organizations retrieved: {len(all_organizations)}")
+            return all_organizations
+            
+        except Exception as e:
+            logger.error(f"Failed to get organizations with filter {filter_id}: {e}")
+            raise
+    
+    def extract_filter_id_from_url(self, filter_url: str) -> str:
+        """Extract filter ID from Pipedrive filter URL"""
+        try:
+            # Pipedrive filter URLs typically look like:
+            # https://app.pipedrive.com/filters/12345
+            # or similar patterns
+            import re
+            
+            # Try to extract ID from various URL patterns
+            patterns = [
+                r'/filters/(\d+)',
+                r'filter_id=(\d+)',
+                r'filter=(\d+)',
+                r'id=(\d+)'
+            ]
+            
+            for pattern in patterns:
+                match = re.search(pattern, filter_url)
+                if match:
+                    filter_id = match.group(1)
+                    logger.info(f"Extracted filter ID: {filter_id} from URL: {filter_url}")
+                    return filter_id
+            
+            # If no pattern matches, try to extract any number from the URL
+            numbers = re.findall(r'\d+', filter_url)
+            if numbers:
+                # Take the last number found (most likely to be the filter ID)
+                filter_id = numbers[-1]
+                logger.info(f"Extracted filter ID (fallback): {filter_id} from URL: {filter_url}")
+                return filter_id
+            
+            raise ValueError(f"Could not extract filter ID from URL: {filter_url}")
+            
+        except Exception as e:
+            logger.error(f"Failed to extract filter ID from URL {filter_url}: {e}")
+            raise
 
 class PipedriveDatabase:
     """Handles SQLite database operations for Pipedrive data"""
@@ -196,6 +285,35 @@ class PipedriveDatabase:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY (org_id) REFERENCES organizations (id),
                     PRIMARY KEY (org_id, field_key)
+                )
+            ''')
+            
+            # Create user filters table
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS user_filters (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    filter_id TEXT UNIQUE NOT NULL,
+                    filter_name TEXT NOT NULL,
+                    filter_url TEXT,
+                    filter_conditions TEXT,
+                    organizations_count INTEGER DEFAULT 0,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    last_used TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    is_active BOOLEAN DEFAULT 1
+                )
+            ''')
+            
+            # Create filtered organizations table
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS filtered_organizations (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    filter_id TEXT NOT NULL,
+                    org_id INTEGER NOT NULL,
+                    org_name TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (filter_id) REFERENCES user_filters (filter_id),
+                    FOREIGN KEY (org_id) REFERENCES organizations (id),
+                    UNIQUE(filter_id, org_id)
                 )
             ''')
             
@@ -360,6 +478,167 @@ class PipedriveDatabase:
             logger.error(f"Failed to save organizations: {e}")
             raise
     
+    def clear_organization_custom_fields(self):
+        """Clear all organization custom fields from the database"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Clear all custom fields
+            cursor.execute('DELETE FROM organization_custom_fields')
+            
+            conn.commit()
+            conn.close()
+            
+            logger.info("Cleared all organization custom fields")
+            
+        except Exception as e:
+            logger.error(f"Failed to clear organization custom fields: {e}")
+            raise
+    
+    def save_user_filter(self, filter_id: str, filter_name: str, filter_url: str = None, 
+                        filter_conditions: str = None, organizations_count: int = 0):
+        """Save or update a user filter"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+                INSERT OR REPLACE INTO user_filters 
+                (filter_id, filter_name, filter_url, filter_conditions, organizations_count, last_used)
+                VALUES (?, ?, ?, ?, ?, ?)
+            ''', (filter_id, filter_name, filter_url, filter_conditions, organizations_count, datetime.now().isoformat()))
+            
+            conn.commit()
+            conn.close()
+            
+            logger.info(f"Saved user filter: {filter_name} (ID: {filter_id})")
+            
+        except Exception as e:
+            logger.error(f"Failed to save user filter: {e}")
+            raise
+    
+    def get_user_filters(self) -> List[Dict[str, Any]]:
+        """Get all user filters"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+                SELECT filter_id, filter_name, filter_url, filter_conditions, 
+                       organizations_count, created_at, last_used, is_active
+                FROM user_filters 
+                WHERE is_active = 1
+                ORDER BY last_used DESC
+            ''')
+            
+            filters = []
+            for row in cursor.fetchall():
+                filters.append({
+                    'filter_id': row[0],
+                    'filter_name': row[1],
+                    'filter_url': row[2],
+                    'filter_conditions': row[3],
+                    'organizations_count': row[4],
+                    'created_at': row[5],
+                    'last_used': row[6],
+                    'is_active': row[7]
+                })
+            
+            conn.close()
+            
+            logger.info(f"Retrieved {len(filters)} user filters")
+            return filters
+            
+        except Exception as e:
+            logger.error(f"Failed to get user filters: {e}")
+            raise
+    
+    def save_filtered_organizations(self, filter_id: str, organizations: List[Dict[str, Any]]):
+        """Save filtered organizations for a specific filter"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Clear existing filtered organizations for this filter
+            cursor.execute('DELETE FROM filtered_organizations WHERE filter_id = ?', (filter_id,))
+            
+            # Insert new filtered organizations
+            for org in organizations:
+                cursor.execute('''
+                    INSERT INTO filtered_organizations (filter_id, org_id, org_name)
+                    VALUES (?, ?, ?)
+                ''', (filter_id, org.get('id'), org.get('name')))
+            
+            # Update organizations count in user_filters table
+            cursor.execute('''
+                UPDATE user_filters 
+                SET organizations_count = ?, last_used = ?
+                WHERE filter_id = ?
+            ''', (len(organizations), datetime.now().isoformat(), filter_id))
+            
+            conn.commit()
+            conn.close()
+            
+            logger.info(f"Saved {len(organizations)} filtered organizations for filter {filter_id}")
+            
+        except Exception as e:
+            logger.error(f"Failed to save filtered organizations: {e}")
+            raise
+    
+    def get_filtered_organizations(self, filter_id: str) -> List[Dict[str, Any]]:
+        """Get organizations for a specific filter"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute('''
+                SELECT fo.org_id, fo.org_name, o.name, o.owner_name, o.open_deals_count
+                FROM filtered_organizations fo
+                LEFT JOIN organizations o ON fo.org_id = o.id
+                WHERE fo.filter_id = ?
+                ORDER BY fo.org_name
+            ''', (filter_id,))
+            
+            organizations = []
+            for row in cursor.fetchall():
+                organizations.append({
+                    'id': row[0],
+                    'name': row[1] or row[2],  # Use filtered name or fallback to org name
+                    'owner_name': row[3],
+                    'open_deals_count': row[4]
+                })
+            
+            conn.close()
+            
+            logger.info(f"Retrieved {len(organizations)} organizations for filter {filter_id}")
+            return organizations
+            
+        except Exception as e:
+            logger.error(f"Failed to get filtered organizations: {e}")
+            raise
+    
+    def delete_user_filter(self, filter_id: str):
+        """Delete a user filter and its associated data"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Delete filtered organizations
+            cursor.execute('DELETE FROM filtered_organizations WHERE filter_id = ?', (filter_id,))
+            
+            # Mark filter as inactive instead of deleting
+            cursor.execute('UPDATE user_filters SET is_active = 0 WHERE filter_id = ?', (filter_id,))
+            
+            conn.commit()
+            conn.close()
+            
+            logger.info(f"Deleted user filter: {filter_id}")
+            
+        except Exception as e:
+            logger.error(f"Failed to delete user filter: {e}")
+            raise
+    
     def get_database_info(self) -> Dict[str, Any]:
         """Get information about the database"""
         try:
@@ -378,12 +657,22 @@ class PipedriveDatabase:
             cursor.execute('SELECT COUNT(*) FROM organization_custom_fields')
             custom_fields_count = cursor.fetchone()[0]
             
+            # Get user filters count
+            cursor.execute('SELECT COUNT(*) FROM user_filters WHERE is_active = 1')
+            filters_count = cursor.fetchone()[0]
+            
+            # Get filtered organizations count
+            cursor.execute('SELECT COUNT(*) FROM filtered_organizations')
+            filtered_orgs_count = cursor.fetchone()[0]
+            
             conn.close()
             
             return {
                 'organizations_count': org_count,
                 'fields_count': fields_count,
-                'custom_fields_count': custom_fields_count
+                'custom_fields_count': custom_fields_count,
+                'user_filters_count': filters_count,
+                'filtered_organizations_count': filtered_orgs_count
             }
             
         except Exception as e:
@@ -407,6 +696,10 @@ class PipedriveDataPuller:
         try:
             logger.info("Starting data pull from Pipedrive...")
             
+            # Clear existing custom fields to prevent duplicates
+            logger.info("Clearing existing organization custom fields...")
+            self.database.clear_organization_custom_fields()
+            
             # Get organization fields
             logger.info("Fetching organization fields...")
             fields = self.client.get_organization_fields()
@@ -426,6 +719,79 @@ class PipedriveDataPuller:
             
         except Exception as e:
             logger.error(f"Pipedrive data pull failed: {e}")
+            raise
+    
+    def pull_filtered_data(self, filter_url: str) -> Dict[str, Any]:
+        """Pull filtered organizations from Pipedrive using a filter URL"""
+        try:
+            logger.info(f"Starting filtered data pull from Pipedrive with URL: {filter_url}")
+            
+            # Extract filter ID from URL
+            filter_id = self.client.extract_filter_id_from_url(filter_url)
+            logger.info(f"Extracted filter ID: {filter_id}")
+            
+            # Get filter details
+            filter_details = self.client.get_filter_details(filter_id)
+            filter_name = filter_details.get('name', f'Filter {filter_id}')
+            filter_conditions = json.dumps(filter_details.get('conditions', {}))
+            
+            # Get filtered organizations
+            logger.info(f"Fetching organizations with filter: {filter_name}")
+            organizations = self.client.get_organizations_by_filter(filter_id)
+            
+            # Save filter information
+            self.database.save_user_filter(
+                filter_id=filter_id,
+                filter_name=filter_name,
+                filter_url=filter_url,
+                filter_conditions=filter_conditions,
+                organizations_count=len(organizations)
+            )
+            
+            # Save filtered organizations
+            self.database.save_filtered_organizations(filter_id, organizations)
+            
+            # Prepare response data
+            filtered_data = {
+                'filter_id': filter_id,
+                'filter_name': filter_name,
+                'filter_url': filter_url,
+                'filter_conditions': filter_details.get('conditions', {}),
+                'organizations': organizations,
+                'organizations_count': len(organizations),
+                'pull_timestamp': datetime.now().isoformat()
+            }
+            
+            logger.info(f"Filtered data pull completed successfully! Found {len(organizations)} organizations")
+            return filtered_data
+            
+        except Exception as e:
+            logger.error(f"Filtered data pull failed: {e}")
+            raise
+    
+    def get_user_filters(self) -> List[Dict[str, Any]]:
+        """Get all user filters"""
+        try:
+            return self.database.get_user_filters()
+        except Exception as e:
+            logger.error(f"Failed to get user filters: {e}")
+            raise
+    
+    def get_filtered_organizations(self, filter_id: str) -> List[Dict[str, Any]]:
+        """Get organizations for a specific filter"""
+        try:
+            return self.database.get_filtered_organizations(filter_id)
+        except Exception as e:
+            logger.error(f"Failed to get filtered organizations: {e}")
+            raise
+    
+    def delete_user_filter(self, filter_id: str):
+        """Delete a user filter"""
+        try:
+            self.database.delete_user_filter(filter_id)
+            logger.info(f"Deleted user filter: {filter_id}")
+        except Exception as e:
+            logger.error(f"Failed to delete user filter: {e}")
             raise
     
     def print_summary(self):

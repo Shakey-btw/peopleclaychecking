@@ -1,0 +1,354 @@
+_id,allowDuplicates,companyName,email,firstName,lastName,linkedinUrl,phone,state,stateSystem
+lea_avvWnCRnhGFDhfcZe,true,Glowfood GmbH,jan.struth@glowfood.bio,Jan,Jan,,,emailsSent,done
+lea_eS5yojBdQfMixnBCh,true,Kaiserhonig UG,thomas.bochmann@kaiserhonig.de,Thomas,Thomas,,,emailsSent,done
+lea_zXRMzeSyH7oTd7R6y,true,Nona Drinks,an@nonadrinks.com,An,An,,+32497588682,emailsSent,done
+lea_8kT44zp9cZXBQxSQp,true,GUMING GmbH,tobias.dell@guming.de,Tobias,Tobias,,+491709159976,emailsSent,done
+lea_gZpuzNdQWnmsMQx7Y,true,Hülsenreich GmbH,simon@huelsenreich.de,Simon,Simon,,,emailsUnsubscribed,unsubscribed
+lea_3u5vB3W4gdnJnMf43,true,Just Organic,t.krueger@just-organic.com,Thomas,Thomas,,01718173760,emailsUnsubscribed,unsubscribed
+lea_gg7KGxbZzDYa9gTD5,true,ÜberQuell St. Pauli,torben.sturhan@ueberquell.com,Torben,Torben,,017663309638,emailsOpened,done
+lea_Wx5sAkvkRXq3DWskj,true,LeBrot,mail@janschmieder.com,Jan,Jan,,015238794455,emailsSent,done
+lea_xboELWuv6XyoFHC4w,true,Frufarm Trade GmbH & Co. KG,k.litschke@berlinashot.de,Katrin,Katrin,,,emailsUnsubscribed,unsubscribed
+lea_BmCmcHwevfHpyhsDL,true,Streugut,kai.gildhorn@schwarzerpfeffer.de,Kai,Kai,,03089617263,emailsSent,done
+lea_kYoKm2gN33E8EK27B,true,Hans Ranke GMBH,torsten@hansranke.de,Thorsten,Thorsten,,+4915111170552,emailsOpened,done
+lea_E2CK4qGKeNKSfhjuB,true,Zonama Foods,ramtin.randjbar@zonama-food.com,Ramtin,Ramtin,,,emailsSent,done
+lea_ujqumLYJmHYePz6mp,true,VERIVAL BIO,elene.rabl@verival.at,Elene,Elene,,,emailsUnsubscribed,unsubscribed
+lea_RLksvCeWrA5eJM459,true,Cucumis GmbH,mail@cucumisdrinks.com,Vasco,Vasco,,,emailsSent,done
+lea_9vG3vswoGBLynEpym,true,Kornfetti,nico@kornfetti.com,Nico,Nico,,,emailsSent,done
+lea_yfpYpFZcrLip3CqRd,true,Landgarten GmbH & Co. KG,c.gollowitzer@landgarten.at,Christoph,Christoph,,,emailsOpened,done
+lea_WzuaZKFRDsQYbrA3J,true,Hannheinehof Lebensmittel GmbH,bestellung@hannheinehof.de,Christoph,Christoph,,,emailsOpened,done
+lea_zsYkWxhyDMppLsG24,true,Twisted Nut,corby@twistednut.de,Corby,Corby,,,emailsOpened,done
+lea_oi6HLFnozKgRnPjLi,true,Brauerei Gebr. Maisel GmbH & Co. KG,brauerei@maisel.com,Jeff,Jeff,,,emailsOpened,done
+lea_ijFXA9nnmWR5KNmTc,true,CREW Republic Brewery GmbH,crew@crewrepublic.de,Mario,Mario,,,emailsOpened,done
+lea_TCjyTG6qxQS89nxLb,true,JACKY F. - Api Jamu GmbH,hello@jackyf.com,Julia,Julia,,,emailsSent,done
+lea_3NyxCCjbwCN4Z8a6u,true,Dipster,hello@dipster.de,Michael,Michael,,,emailsSent,done
+lea_wWhE9QkPgE2bDf2gW,true,Naturally Pam GmbH,support@naturally-pam.de,Jannik,Jannik,,,emailsReplied,done
+lea_b2d5pNx4mBmDuP7ne,true,Marania®,contact@marania.eu,Maximilian,Maximilian,,,emailsUnsubscribed,unsubscribed
+lea_pXdqmQYFZ8W4gtiEM,true,Tropicai,hello@tropicai.com,christine,christine,,,emailsUnsubscribed,unsubscribed
+lea_8EZXqK2L2dryrtoNj,true,Hempions GmbH,contact@hempions.com,Fabian,Fabian,,+43720302244,emailsOpened,done
+lea_guRFZgc6MXzuZJcxE,true,Simply Nuts GmbH & Co. KG,hello@simplynuts.com,Cynthia,Cynthia,,+494186888050,emailsOpened,done
+lea_JpLFnupRdxAwt6aue,true,Shape Republic GmbH,stefanie.mund@shape-republic.com,Stefanie,Stefanie,,,emailsOpened,done
+lea_gyYy6iL54GQ8NpjfB,true,Spreebrand.Berlin,olaf.grund@spreebrand.berlin,Olaf,Olaf,,,emailsSent,done
+lea_bFXJXKHd9quCazb4C,true,Beetgold GmbH,kontakt@beetgold.com,Sebastian,Sebastian,,,emailsSent,done
+lea_jzZ6fd6g65qwLjGvs,true,Naturata AG,juergen_heilig@t-online.de,Jürgen,Jürgen,,,emailsUnsubscribed,unsubscribed
+lea_hGJTb5zLiRcZ6CD9e,true,HelloFresh,od@hellofresh.com,Ouessanne,Ouessanne,,,emailsOpened,done
+lea_6bBTqReNSs6wkfjpb,true,Hardenberg-Wilthen AG,cheers@easipdrinks.com,Milan,Milan,,,emailsOpened,done
+lea_ZNfMXpphK4Ax3Pfq9,true,the barefood way GmbH,hello@thebarefoodway.com,Lorena,Lorena,,,emailsOpened,done
+lea_DBW2wnMhvaSNEbKTy,true,Super Streusel GmbH,superfrage@superstreusel.de,Katharina,Katharina,,040228522650,emailsSent,done
+lea_wx8CgGoAZsXmZnDr6,true,Herbeus Greens GmbH,pa@herbeusgreens.com,Philipp,Philipp,,,emailsUnsubscribed,unsubscribed
+lea_6hHEA5bYMmBxjBJbP,true,COFYMI GmbH,office@cofymi.de,Cornelius,Cornelius,,+4970323596072,emailsSent,done
+lea_xWbcBj8MngdQn4iNr,true,8PANDA,hello@8panda.eu,Alexander,Alexander,,+4916097780090,emailsSent,done
+lea_CAtrwbMnkqa7io8cv,true,KERNenergie,denis@kern-energie.com,Denis,Denis,,+4917662302287,emailsUnsubscribed,unsubscribed
+lea_YzAqBDuYwzrtzt8Qb,true,BRüSLi,michael.strobl@bruesli.com,Michael,Michael,,,emailsUnsubscribed,unsubscribed
+lea_pYBESnbWsZh2AoboT,true,Gute Kulturen GmbH,martin@gutekulturen.de,Martin,Martin,,,emailsOpened,done
+lea_kQpRAksZXoPFjHywe,true,Kolonne Null,wenke@kolonnenull.com,Wenke,Wenke,,,emailsOpened,done
+lea_JmcKR7m7qf2ZKa6jK,true,HeiMart & Friends GmbH,thomas.lieske@heimartfriends.de,Thomas,Thomas,,,emailsSent,done
+lea_CXYnqnSRcSFMwyCh8,true,Selectum GmbH,camilo.wolff@selectum.at,Camilo,Camilo,,,emailsSent,done
+lea_HducTFJxFjTRwbJCt,true,air up,julio.tovar@air-up.com,Julio,Julio,,,emailsUnsubscribed,unsubscribed
+lea_dQ9xdvu6f3MnGxkB7,true,4peoplewhocare GmbH,marc@4peoplewhocare.de,Marc,Marc,,+491607670047,emailsSent,done
+lea_kmg4AeqS7RaYcBYFD,true,OH LA LAQUA GmbH,connect@ohlalaqua.com,Christoph,Christoph,,,emailsSent,done
+lea_HZnKEQeiwhBhZMqKH,true,air up,brandon.provost@air-up.com,Brandon,Brandon,,,emailsUnsubscribed,unsubscribed
+lea_3KHZA7zY3v6Gwrwoi,true,Oh my Dough,nicolas.limbrock@ohmydough.de,Nicolas,Nicolas,,,emailsUnsubscribed,unsubscribed
+lea_S94ehbQdp8uXanvZ9,true,Oh Honey GmbH,j.kaufmann@oh-honey.de,Jonas,Jonas,,,emailsSent,done
+lea_XxqEBFnPsrg3dk7Tf,true,DIE FRISCHEMANUFAKTUR GmbH,kontakt@diefrischemanufaktur.de,Dr.,Jenny,,,emailsSent,done
+lea_iFaz94Dr96W4EWK7A,true,Wildcorn GmbH,rejne@wildcorn.de,Rejne,Rejne,,,emailsSent,done
+lea_GpN9zdMhaDx5wkiGF,true,Tastee GmbH,servus@eatly.eu,Claudia,Claudia,,+491728982864,emailsSent,done
+lea_2T4Ph8dRbz75CHFo6,true,Anaveda Feinkost GmbH,h.ducos@anaveda.de,Henry,Henry,,,emailsUnsubscribed,unsubscribed
+lea_W8NHjDRGxN8x8hzff,true,Grovy,justin@grovy.de,Justin,Justin,,,emailsUnsubscribed,unsubscribed
+lea_ZiJnQcH26x8kJFmuo,true,BIONADE GmbH,rajko.zimny@bionade.de,Rajko,Rajko,,,emailsOpened,done
+lea_5QyGSp6QADL2FMbhF,true,MyMakery,birgit.tantner@mymakery.de,Birgit,Birgit,,+4915221838872,emailsSent,done
+lea_H5hjEvvkRTzyM6E3N,true,HelloFresh,cga@hellofresh.com,Carlo,Carlo,,,emailsOpened,done
+lea_erJMXFfd2m7hrku4f,true,JoyBräu Functional Beer,julian.kraemer@joybraeu.de,Julian,Julian,,,emailsUnsubscribed,unsubscribed
+lea_6jhNeF7NmC2DLjTLF,true,Knalle Popkornditorei,alvar@knalle.berlin,Alvar,Alvar,,,emailsOpened,done
+lea_y682n3adQt5iguWwQ,true,Knalle Popkornditorei,christopher@knalle.berlin,Christopher,Christopher,,,emailsOpened,done
+lea_Jaas3h2wPauCFsKoL,true,Knalle Popkornditorei,andre@knalle.berlin,Andre,Andre,,,emailsOpened,done
+lea_AZwNcReRaQay9FfxG,true,ayoka GmbH,office@feelayoka.com,Philip,Philip,,,emailsOpened,done
+lea_kpnarYx2Bzy2wxWJA,true,naehrsinn Handels GmbH,leo@tulipans.com,Leo,Leo,,+436803284382,emailsReplied,done
+lea_yfMd4L5jqiGHDLr5M,true,SD Sugar Daddies GmbH,goetz@sdsugardaddies.de,Götz,Götz,,,emailsUnsubscribed,unsubscribed
+lea_YfvqyFcGR5tqotCEF,true,Dickes Wassar,jonas@dikkes-wassar.de,Jonas,Jonas,,+4976176993930,emailsSent,done
+lea_gfq6b6WHiMfEMrN7E,true,PPURA GmbH,alessandro@ppura.ch,Alessandro,Alessandro,,+41795194042,emailsOpened,done
+lea_roYwBPnEMv9KddnDt,true,HAKUMA Handels GmbH,christian@hakuma.com,Christian,Christian,,,emailsSent,done
+lea_Nwfvy5oxs82dimdwn,true,The SuperFood Factory,martin@superfoodfactory.com,Martin,Martin,,,emailsUnsubscribed,unsubscribed
+lea_8yz6MeaZGHoeXD4YW,true,Natural Crunchy,gerhard.hipf@naturalfood.at,Gerhard,Gerhard,,+4319972805001,emailsOpened,done
+lea_MKnHvLwg7HSuwSnMj,true,PPURA GmbH,thies@ppura.de,Thies,Thies,,,emailsOpened,done
+lea_x5YRt4KaNHEgn7iaD,true,Mia & Ben,karina@miaben.net,Karina,Karina,,,emailsUnsubscribed,unsubscribed
+lea_MAfprMz5PaXWG5Xd9,true,Younikat,alexandra.erk@vegdog.de,Alexandra,Alexandra,,,emailsUnsubscribed,unsubscribed
+lea_kaLWEYKrBNvCaKcaq,true,Dörrwerk GmbH,pp@doerrwerk.de,Philipp,Philipp,,,emailsSent,done
+lea_44K4YTSpMyybRuwE6,true,PPURA GmbH,pina@ppura.ch,Pina,Pina,,,emailsOpened,done
+lea_5E5RZXx3FTgExvHjT,true,The Foodist GmbH,domenic@foodist.de,Domenic,Domenic,,,emailsUnsubscribed,unsubscribed
+lea_cinoEgbjXLjpdZwuX,true,foodspring,tobias.schuele@icloud.com,Tobias,Tobias,,,emailsOpened,done
+lea_TbThCrcEghTDqzkFC,true,CFP Brands Süßwarenhandels GmbH & Co. KG,fgorzolla@cfp-brands.de,Frank,Frank,,,emailsOpened,done
+lea_zAEtTpM3FLz8mxTAt,true,Whitewall GmbH,partner@brain-effect.com,Fabian,Fabian,,,emailsReplied,done
+lea_QMdkhBB4d25c4cp5L,true,OTG Tee,tanja.luehders@lsh-ag.de,Fr.,Fr. Lüders,,,emailsSent,done
+lea_TrwpELNfoRC7HAsrR,true,Kale&Me GmbH,denjo@kaleandme.de,Daniel,Daniel,,,emailsSent,done
+lea_itEuKtxEJXNbvkdxr,true,heydrate UG,julian@heydrate.com,Julian,Julian,,,emailsSent,done
+lea_eocrzpbSRg7mrPagL,true,lycka GmbH,felix.leonhardt@gmail.com,Felix,Felix,,,emailsOpened,done
+lea_RX5GyHg3dJpNLMQ99,true,biokaiser GmbH,m.leckron@biokaiser.de,Marcus,Marcus,,,emailsOpened,done
+lea_aesS7ntbhyc2EFv7F,true,APOSTEL Griechische Spezialitäten GmbH,kostas.kourkoutas@apostels.de,Konstantinos,Konstantinos,,05131/462621,emailsOpened,done
+lea_Jw33HRe4cB3psq2a2,true,CS Food Apartment GmbH,jonny@foodlab.hamburg,Jonny,Jonny,,,emailsUnsubscribed,unsubscribed
+lea_5nMgk4EcrjzeKrc9j,true,koakult GmbH,duarte@koawach.de,Daniel,Daniel,,+4930232566385,emailsOpened,done
+lea_GvqEm7NTRbtv4sexB,true,Zweifel Chips & Snacks AG,marc.bischoff@zweifel.ch,Marc,Marc,,+41800442211,emailsReplied,done
+lea_ALCv3BRwb6JPK2zN5,true,Frontnow GmbH,marc.funk@frontnow.com,Marc,Marc,,,emailsSent,done
+lea_uqvLh8QKweB4nuopp,true,CMMA Gartmann GmbH,gartmann@gartmannschokolade.de,Corinna,Corinna,,,emailsSent,done
+lea_oSijbTNk85Bi5yWwP,true,Cereal Club Inc.,s.halwani@cereal-club.de,Sacha,Sacha,,04033489600,emailsSent,done
+lea_Eq2bnSWL6HGzBuYuL,true,Frosta Tiefkühlkost GmbH,przemyslaw.jezierski@frosta.com,przemyslaw,przemyslaw,,,emailsOpened,done
+lea_8bc24uznzxj5XSRGT,true,Gerolsteiner Brunnen GmbH & Co. KG,marcus.schumacher@gerolsteiner.com,Marcus,Marcus,,,emailsSent,done
+lea_LzLfT6Mgos7RNoaQz,true,Kale&Me GmbH,thomas@kaleandme.de,Thomas,Thomas,,,emailsUnsubscribed,unsubscribed
+lea_MpR43Mzs69hQoxXqF,true,Herta GmbH,kontakt@herta.de,Jörg,Jörg,,,reviewed,reviewed
+lea_fSELoCTkpPcqkLSLw,true,mychoco GmbH,frederik.schmitz@mychoco.com,Frederik,Frederik,,+491737302205,reviewed,reviewed
+lea_5wLnpER8PDPRayjJj,true,Höhenrainer Delikatessen Gmbh,daniel.heinz@hoehenrainer.de,Daniel,Daniel,,,reviewed,reviewed
+lea_9eQQfZMCa3s9MyKc2,true,RUPP FOOD Austria GmbH,guenter.frank@rupp.at,Günter,Günter,,,reviewed,reviewed
+lea_5DHi4v7TuJRAcbvbA,true,Franz Wiltmann GmbH,bastian.willmann@wiltmann.de,Bastian,Bastian,,,reviewed,reviewed
+lea_WkAsz8Bjxb98CgHcG,true,Hügli Nahrungsmittel GmbH,carina.dieringer@huegli.de,Carina,Carina,,+497732807422,reviewed,reviewed
+lea_3uEeWnkRQz7nJ4LfJ,true,Bangs A/S,pl@bangs.eu,Pia,Pia,,,reviewed,reviewed
+lea_LDHLzf4JQLE9z3tFn,true,Bangs A/S,cl@bangs.eu,Claus,Claus,,,reviewed,reviewed
+lea_4Za5uqDepbY46AdPj,true,claro products GmbH,diether.wieden@claro.at,Diether,Diether,,,reviewed,reviewed
+lea_JB2sZ96XwsRWqtRDz,true,deli dip,office@delidip.com,Fanny,Fanny,,,reviewed,reviewed
+lea_5aFxZAG5hSqxNAt4e,true,Zentrag EG,th.beismann@zentrag.de,Thomas,Thomas,,,reviewed,reviewed
+lea_K4vDzBTRvZ83uHMnw,true,Hela Gewürzwerk (GmbH),stefan.winter@hela.eu,Stefan,Stefan,,,reviewed,reviewed
+lea_a3JLHmZXghaiwbQNc,true,Sea Fresh Retail BV,jantiemenhakvoort@seafresh.nl,Jan,Jan,,,reviewed,reviewed
+lea_F3XKSp2a5ubcLFp8v,true,Wholy Greens | B Corp,walter@wholygreens.com,Walter,Walter,,,reviewed,reviewed
+lea_TupHCEBYgDwTuppb2,true,Zentis Group,phillip.koenig@zentis.de,Phillip,Phillip,,,reviewed,reviewed
+lea_5Gar6khMQW63nCLu3,true,Natsu,stephan@natsu.eu,Stephan,Stephan,,,reviewed,reviewed
+lea_XdNFFGTu6kXL3ueFJ,true,Natsu,kathrin@natsu.eu,Kathrin,Kathrin,,,reviewed,reviewed
+lea_pCkHmPeXvTfsTbpQm,true,Ysco nv,fabian.deman@ysco.eu,Fabian,Fabian,,,reviewed,reviewed
+lea_vap99z3iSST44mwnb,true,Grossmann Feinkost GmbH,jonathan.hems@grossmann-feinkost.de,Jonathan,Jonathan,https://www.linkedin.com/in/jonathan-hems-6a792a244,,reviewed,reviewed
+lea_NgXtgJXYqY4sX2H36,true,Treets Piasten,office@treets.eu,Joel-Florian,Joel-Florian,,+4991916110,reviewed,reviewed
+lea_J3ooTk9N3BnyfQFXn,true,Ziegler Käsespezialitäten,christopher.goethling@ziegler-kaese.de,Christopher,Christopher,,,reviewed,reviewed
+lea_yTE7PNREdDhGzbtyQ,true,Root to Fruit Distillers,contact@rtfdistillers.com,Stephan,Stephan,,01627833366,reviewed,reviewed
+lea_ksscPAqgRzhEBdgwH,true,Carl Kühne KG (GmbH & Co.),kay.preuss@kuehne.de,Kay,Kay,,,reviewed,reviewed
+lea_f9FFSyEoSAPNeL7WC,true,Spoons of Taste,agata@spoonsoftaste.com,Agata,Agata,,+4917631004005,reviewed,reviewed
+lea_TmdDTbLTwooukha2G,true,Kestrel Foods || Forest Feast & Acti-Snack & Just Live a Little,johnny@forestfeast.com,Johnny,Johnny,,,reviewed,reviewed
+lea_qeNc5425JW5DsCQ66,true,Ahnert GmbH,andreas.ahnert@ahnert.gmbh,Andreas,Andreas,,,reviewed,reviewed
+lea_2WJosLFqFnX68GyJ9,true,Tante Tomate GmbH Co. KG,rt@tantetomate.de,Renate,Renate,,,reviewed,reviewed
+lea_8h2ZSoqpnXj2C2nTB,true,Better Nature Tempeh,l.pfefferle@tempehmanufaktur.net,Lioba,Lioba,https://www.linkedin.com/in/lioba-pfefferle-b5703a228,,reviewed,reviewed
+lea_MK22ENXoNbAf3iXNf,true,Eatplants,sebastian@eatplants.de,Sebastian,Sebastian,,,reviewed,reviewed
+lea_8dq6c6E3uvPg7bAqr,true,Einhorn Products GmbH,philip@einhorn.my,Philip,Philip,,,reviewed,reviewed
+lea_odu3uZgtK53LxczrW,true,Hela Gewürzwerk (GmbH),thomas.friedrich@hela.eu,Thomas,Thomas,,+4941024960,reviewed,reviewed
+lea_pH9P3Ka4fCbvmWh3N,true,Patiswiss AG (PATAG),sandro.ott@patiswiss.com,Sandro,Sandro,,,reviewed,reviewed
+lea_L9vLtk7R9iC9cgXab,true,Plastic2Beans,cruhnke@plastic2beans.com,Christoph,Christoph,,,reviewed,reviewed
+lea_RCwxyp3SLavrQS3bd,true,Grenade Ltd,damon.mcewan@grenade.com,Damon,Damon,,,reviewed,reviewed
+lea_rxvRQGnLAzrswyZhH,true,"Hippeas, Inc.",jenny@hippeas.com,Jenny,Jenny,,,reviewed,reviewed
+lea_tqmC9v5tHma2u5ofM,true,Frozen Power GmbH & Co. KG,ayah@frozenpower.com,Ayah,Ayah,https://www.linkedin.com/in/ayah-riefaie-916b831b7,,reviewed,reviewed
+lea_P2eP7hHREAiL3JR2E,true,Joe & Seph's,andy@joeandsephs.com,Andy,Andy,,,reviewed,reviewed
+lea_QtFKqx97xNRvrqjRT,true,Elvis Bogicevic e.K.,j.castelein@elviseis.de,Jim,Jim,,,reviewed,reviewed
+lea_h9xAsBsM3ACbWpQap,true,MamiLab AG (MamiGut),vanessa@mamigut.de,Dr.,Dr.,,,reviewed,reviewed
+lea_mQuXstmvzZJR7w6sn,true,Adonis Foods Europe GmbH,ingo@adonis-foods.com,Ingo,Ingo,,,reviewed,reviewed
+lea_kT9HhdyRBE39KjipD,true,Dovgan GmbH,viktor@dovgan.de,Viktor,Viktor,,,reviewed,reviewed
+lea_2CW3vjD2bmrAxwsd9,true,Adolf Darbo AG,roland.huter@darbo.at,Roland,Roland,https://www.linkedin.com/in/roland-huter-a084ba147,,reviewed,reviewed
+lea_tt4S9r5vHj9QCtpXy,true,Ethiconomy Services GmbH,stefan.reese@bigfood-group.com,Stefan,Stefan,,+491724124131,reviewed,reviewed
+lea_FY6t8EZ8zsmkbDpmC,true,Prolupin GmbH ( Luve),km@prolupin.de,Karin,Karin,,,reviewed,reviewed
+lea_DDPsRMdifFvhEam48,true,Candy Kittens,ed@candykittens.co.uk,Edward,Edward,,,reviewed,reviewed
+lea_5o5NcTzv3eii77Tkz,true,Hamburg Distilling Company GmbH,lukas@hamburgdistilling.com,Lukas,Lukas,,+494057256749,reviewed,reviewed
+lea_93xbKybYJP8dHZKJX,true,fritz-kola GmbH,tim.tetens@fritz-kola.com,Tim,Tim,,,reviewed,reviewed
+lea_L6rHbTXnYYkX68nXk,true,Hela Gewürzwerk (GmbH),till.werner@hela.eu,Till,Till,,,reviewed,reviewed
+lea_qHYZtjPqZpRm2chM5,true,veprosa,dominik@veprosa.com,Dominik,Dominik,,,reviewed,reviewed
+lea_GEGQxtMmPyLRfZBD6,true,Prolupin GmbH ( Luve),dl@prolupin.de,David,David,,,reviewed,reviewed
+lea_dR3xqx7GZ5SRXQDEH,true,HAPPY COCO!,weston@happycoco.com,Aleandra,Aleandra,,,reviewed,reviewed
+lea_46Ds9ZchK9Pqd8ZFX,true,RABE Handels GmbH & Co.KG,vertrieb@spreewaldrabe.de,Sandro,Sandro,,+493542893332,reviewed,reviewed
+lea_7J6W4rfjTeWJhthAD,true,Love Cocoa | B Corp,james.cadbury@lovecocoa.com,James,James,,,reviewed,reviewed
+lea_Fv7QzYJPz82QNijyk,true,Joe & Seph's,adam@joeandsephs.com,Adam,Adam,,,reviewed,reviewed
+lea_cWFdddS6uKZ7Eo8Rf,true,air up,brian.bishop@air-up.com,Brian,Brian,,,reviewed,reviewed
+lea_nks4BEXDckQZ7b8No,true,The Glory Mornin' Company GmbH,ma@glorymornin.com,Marc,Marc,,,reviewed,reviewed
+lea_rShx8nJsdvTW7ZnDA,true,Hermann Fuchs OHG,malte.stohner@fuduu.de,Malte,Malte,,,reviewed,reviewed
+lea_55jmvugoif7XdnMpY,true,Dr. Weingart AG,anne.helmle@docweingart.com,Anne,Anne,,,reviewed,reviewed
+lea_aniGRd89iM4TrzAFa,true,Destille Kaltenthaler GmbH,trytoberoger@yahoo.de,roger,Roger,,,reviewed,reviewed
+lea_sFTsix7GDww9mhb7J,true,Sinery,sin-beverages@web.de,Nadine,Nadine,,,reviewed,reviewed
+lea_74acXPrzxNWWKEs85,true,MBG International Premium Brands GmbH,herb@mbg-online.net,Andreas,Andreas,,,reviewed,reviewed
+lea_ypgtieJzR4BoD7PqG,true,Marry Icetea,david@marryicetea.com,David,David,,,reviewed,reviewed
+lea_NPcfc8yGMeNHmc44q,true,Kreyenhop & Kluge GmbH & Co. KG,bruggemann@kreyenhop.de,Christian,Christian,,,reviewed,reviewed
+lea_fD9956A7wRRR4D8bo,true,wunderfish GmbH,lina.sommer@bettafish.co,Lina,Lina,,,reviewed,reviewed
+lea_pAmNva7WHd2WNdzm4,true,DIRTEA Limited,v.arens@drinks-and-more.com,Volker,Volker,,,reviewed,reviewed
+lea_zrEWgGCS2trGoKXt3,true,delidia,dh@delidia.de,Daniel,Daniel,,,reviewed,reviewed
+lea_6cZZWR2E97RNH2GLg,true,Trink 1 GmbH,e.reiss@goodginger.de,Eva,Eva,,,reviewed,reviewed
+lea_pCsZdaSKHA2hx4cB9,true,vongrundaufgut GbR,nting@vongrundaufgut.de,Nicolas,Nicolas,,,reviewed,reviewed
+lea_B5eHwmAk24Jqyzchq,true,Every. GmbH,christian@every-foods.com,Christian,Christian,,,reviewed,reviewed
+lea_szG42Px2tt5watSvG,true,Mehrwelt,joerg.ziesak@mehrwelt.com,Jörg,Jörg,,,reviewed,reviewed
+lea_ZExDXwG6xLGq5ohzw,true,dropz AG,larissa.steiger@dropz.com,Larissa,Larissa,,,reviewed,reviewed
+lea_tGELoFZogD8N5iDoQ,true,eatventure GmbH,schrand@eatventure.de,David,David,,,reviewed,reviewed
+lea_PwnoDGYfYfQGFYNCt,true,Grote & Co. Spirits oHG,alex@grote-spirits.com,Alex,Alex,,,reviewed,reviewed
+lea_DPHoXB6yxnj6d8frD,true,Fuchs und Fink GmbH,sebastian@frucht-freunde.de,Sebastian,Sebastian,,,reviewed,reviewed
+lea_jTCYkg4RkvqskTdNv,true,MyCupOfTea GmbH,timo.chitula@mycupoftea-shop.com,Timo,Timo,,,reviewed,reviewed
+lea_9HhfRj2MDpy9fyw2u,true,Mehrwelt,juliane.wagner@mehrwelt.com,Juliane,Juliane,,,reviewed,reviewed
+lea_TXTsxPRXCjsAhg8ZS,true,Mars,nicole.dubrow@effem.com,Nicole,Nicole,,,reviewed,reviewed
+lea_G3LkBGwBcy5nrQjgK,true,Foodment GmbH,hallo@haferreich.de,Lena,Lena,,,reviewed,reviewed
+lea_LwYetz3tQ7EZvrei3,true,NATURWIRKT GMBH,business@naturwirkt.de,Christian,Christian,,,reviewed,reviewed
+lea_cx4bp3sodW2BHyzNe,true,Witthuhn GbR,nici@sirlunchalot.berlin,Nicole,Nicole,,,reviewed,reviewed
+lea_exvj3Yve5p3dTiEWQ,true,edmund vegan GmbH & Co. KG,edmund@edmund.bio,Edmund,Edmund,,,reviewed,reviewed
+lea_HpPLKCibxGB5H2xfs,true,guteseis,post@guteseis.de,Nils,Nils,,+491741993579,reviewed,reviewed
+lea_XRuNKYFjvqmHgBwAL,true,MIGFO GmbH,diego.valiente@stevialine.de,Diego,Diego,,,reviewed,reviewed
+lea_8FL72LbumKnWag6pk,true,InterGoods GmbH,pc@intergoods.de,Philip,Philip,,,reviewed,reviewed
+lea_stxNLQmBSv6uY8Pow,true,Krass Drinks,dustin@krass-drinks.de,Dustin,Dustin,,,reviewed,reviewed
+lea_qKQ8xgnz5fKxCXEtr,true,Kreyenhop & Kluge GmbH & Co. KG,lehning@kreyenhop.de,Lehning,Lehning,,,reviewed,reviewed
+lea_zFJEQxnJ4GN23oGQn,true,Malzit,bestellung@malzit.de,Alexander,Alexander,,,reviewed,reviewed
+lea_Bj3PdAPqw4yCSL2nq,true,Lloyd Caffee GmbH,gabriel@lloyd-caffee.de,Jonas,Jonas,,,reviewed,reviewed
+lea_4D6jNxH73jLcg5w5a,true,JoyBräu Functional Beer,tobias.dunst@joybraeu.de,Tobias,Tobias,,,reviewed,reviewed
+lea_9EvgptHfZMuPqJaA8,true,Kotányi GmbH,sonja.patzl@kotanyi.com,Sonja,Sonja,,,reviewed,reviewed
+lea_p4NYwM5MP8pCWGuSX,true,Curtice Brothers Deutschland GmbH,jackie@curticebrothers.com,Jaqueline,Jaqueline,,,reviewed,reviewed
+lea_s35557tpR7zR46pTw,true,Kaffeerösterei de koffiemann GmbH,heradin.bayrak@de-koffiemann.de,Heradin,Heradin,,,reviewed,reviewed
+lea_mkWZ2Yd4TzxDfsYLc,true,panifactum -ein Unternehmensbereich der Mühlenbeck GmbH,mareike@panifactum.de,Mareike,Mareike,,,reviewed,reviewed
+lea_QQoP3ttSxiToQprHu,true,Powerbeärs,tim@powerbears.com,Tim,Tim,,,reviewed,reviewed
+lea_WHmhf4e2LsGs7xDgY,true,HAWESKO Holding SE,h.sislian@hawesko-holding.com,Hanno,Hanno,,,reviewed,reviewed
+lea_j92y5K5MAEDWHiBme,true,Halloren Schokoladenfabrik AG,chris.hanke@delitzscher.de,Chris,Chris,,,reviewed,reviewed
+lea_D2XAi6Ahzbvj4dqEn,true,Käsemanufaktur Müritz GmbH,mh@kaesemanufakturmueritz.de,Martin,Martin,,017620531923,reviewed,reviewed
+lea_HJMnjNDr57qjJF7iw,true,Ralphs Bio Drinks GmbH,deniz.imre@gastro-hero.de,Deniz,Deniz,,+492311772630,reviewed,reviewed
+lea_xrxGwF2Fj7bf9aake,true,TeeFee | la marchante GmbH,fahl@lamarchante.de,Maike,Maike,,,reviewed,reviewed
+lea_r4t39HntFpE2mbqeu,true,Rodi Fructus AG,a.guarnieri@rodifructus.ch,Adrian,Adrian,,,reviewed,reviewed
+lea_xbrXM6vQXZpf4DB7e,true,Naturkost Ernst Weber GmbH,schmidt@naturkostweber.de,Pauline,Pauline,,0049897463420,reviewed,reviewed
+lea_4pnioHuzRkEMLTSGh,true,Naturkost Ernst Weber GmbH,kerling@naturkostweber.de,Kerstin,Kerstin,,,reviewed,reviewed
+lea_wQzdQkAQDSYvS4QtH,true,Speicherstadt Kaffeerösterei,m.pulmer@speicherstadt-kaffee.de,Marten,Marten,,+4940537998501,reviewed,reviewed
+lea_kwRYYfYFMrPspbc3Q,true,LLOYD Shoes GmbH,ann@lloyd.com,Sin,Sin,,,reviewed,reviewed
+lea_gtEmgE6iN4w3TpqwC,true,Quarantini – Social Dry Gin,boris.markic@drinktesla.com,Boris,Boris,,,reviewed,reviewed
+lea_ykeakfkrdQqu3YuWL,true,Breko GmbH,loersch@breko.de,Wolfgang,Wolfgang,,+494214607070,reviewed,reviewed
+lea_wuZ8mjvBQd6Zmvxo7,true,Kugler Feinkost GmbH,sascha.paur@kugler.de,Sascha,Sascha,,0894623820,reviewed,reviewed
+lea_c9NpbWiwZiHdxB4uR,true,NORDSEE GmbH,eric.gliemmo@nordsee.com,Eric,Eric,,+494711302,reviewed,reviewed
+lea_E3DEfQnb9LuW5oPvr,true,Josef Manner & Comp. AG,a.malacek@manner.com,Andreas,Andreas,,,reviewed,reviewed
+lea_iCQrfdL9pAwkDY5Qb,true,Delphi Organic GmbH,mhebendanz@delphiorganic.com,Michael,Michael,,+49251280560,reviewed,reviewed
+lea_KxBkD6qLA5umrgxRh,true,RUNGIS express GmbH,michael.poggenpohl@rungisexpress.com,Michael,Michael,,,reviewed,reviewed
+lea_YMPmfZwQHjCeacdgK,true,GDP Global Drinks Partnership GmbH,alexandra.saar@gdp-drinks.de,Alexandra,Alexandra,,+498924887470,reviewed,reviewed
+lea_SR8HTJaiCDEMf7ZyM,true,Bösch Boden Spies GmbH & Co. KG,sandra.heitmann@boeschbodenspies.com,Sandra,Sandra,,+49403330160,reviewed,reviewed
+lea_9aAzzpsqaMKoaKZaK,true,Alpenhain Käsespezialitäten GmbH,paul.heimerer@alpenhain.de,Paul,Paul,,08039402111,reviewed,reviewed
+lea_a3F4esf8bJG36R2zQ,true,Naturkost Ernst Weber GmbH,saur@naturkostweber.de,Marina,Marina,,,reviewed,reviewed
+lea_Jb53KJagJNoq7s3qo,true,Tofutown.com GmbH,alex.rieb@tofutown.com,Alex,Alex,,,reviewed,reviewed
+lea_K2Gav3PpRgxLd4Nx4,true,Merschbrock-Wiese Gewürz GmbH,a.schemp@gewuerze.com,Alexander,Alexander,,,reviewed,reviewed
+lea_FFSNDukv2oFYYudPA,true,HACK AG,bierbrauer.frank@hack.ag,Frank,Frank,,+49263496600,reviewed,reviewed
+lea_kdEhFJkqGqraKHcdb,true,MAYOLA® Kaffee,philipp.kersting@mayola.de,Philipp,Philipp,,,reviewed,reviewed
+lea_YSqZhQSSSNzKL4ndK,true,Kägi Söhne AG,pascal.grin@kaegi.com,Pascal,Pascal,,,reviewed,reviewed
+lea_mF5C6jS5NsJcqYSMX,true,11er Nahrungsmittel GmbH,franz.pleh@11er.at,Franz,Franz,,+435522515210,reviewed,reviewed
+lea_YdjFkuoPPEBvLcZnP,true,Top Chef SA,daniel.puric@top-chef.ch,Daniel,Daniel,,+41244362413,reviewed,reviewed
+lea_FvZCDunf8iY2iF6Th,true,SD Sugar Daddies GmbH,davide@sdsugardaddies.de,Davide,Davide,,,reviewed,reviewed
+lea_HTSu3iq3HBKcpowtt,true,Eatplants,freddy@eatplants.de,Freddy,Freddy,,,reviewed,reviewed
+lea_9JvmKLCwv6Ahy8Yxt,true,Hoche Butter GmbH,christina.steinke@uelzena.de,Christina,Christina,,,reviewed,reviewed
+lea_C5yWBFYkmnXpkoyoW,true,mychoco GmbH,nick.meiners@mychoco.com,Nick,Nick,,+4954158058861,reviewed,reviewed
+lea_aqbQ7Ccj9Z6cwuqzR,true,Merschbrock-Wiese Gewürz GmbH,t.schroeder@gewuerze.com,Toni,Toni,,,reviewed,reviewed
+lea_bigSFY6wvJmMdmaYQ,true,Paradise Fruits | By Jahncke,jan.dessel@paradise-fruits.de,Jan,Jan,,,reviewed,reviewed
+lea_RYpvF4Y2pXPTA6pzy,true,Bösch Boden Spies GmbH & Co. KG,metin.wachholz@boeschbodenspies.com,Metin,Metin,,+49403330160,reviewed,reviewed
+lea_j6jHfLgBnWZEiN9Rn,true,Bösch Boden Spies GmbH & Co. KG,alexandra.ziehn@boeschbodenspies.com,Alexandra,Alexandra,,+49403330160,reviewed,reviewed
+lea_J8PMSJ6Qx8dt4j6j6,true,lycka GmbH,carlo.kohns@purefood.de,Carlo,Carlo,,,reviewed,reviewed
+lea_wQxZdWr4mMQoWLPSc,true,Huberti GmbH,bernd.huberti@huberti-gmbh.de,Bernd,Bernd,,,reviewed,reviewed
+lea_TFFRyovbrdfnc7bp9,true,Newlat GmbH,antoine.ballet@newlat.de,Antoine,Antoine,,,reviewed,reviewed
+lea_JYauN2yRcDfERXg52,true,PICK Deutschland GmbH,ale@pick.de,Andreas,Andreas,,,reviewed,reviewed
+lea_7n6ggfc2RngQuKH5F,true,Allerstedter Käserei GmbH,allerstedter-kaeserei@poelmeyer-gruppe.de,Kai,Kai,,,reviewed,reviewed
+lea_o6A78erjk6JAyoNFn,true,Münsterland J. Lülf GmbH,hallo@muensterland-milch.de,Melchior,Melchior,,,reviewed,reviewed
+lea_p5YDaDf4WDQuGFtMA,true,Agrarfrost GmbH,okoch@agrarfrost.de,Oliver,Oliver,,,reviewed,reviewed
+lea_dz2ZSKhu43LvRQzjR,true,NABA Feinkost GmbH,r.senft@naba.de,Reinhard,Reinhard,,,reviewed,reviewed
+lea_C4siMKd4q7vnyRo4L,true,PEZ International GmbH,office@pez.at,Michaela,Michaela,,,reviewed,reviewed
+lea_w6uBor8vuF2zFxfym,true,The Estée Lauder Companies Inc.,daniela.kohn@de.estee.com,Daniela,Daniela,,,reviewed,reviewed
+lea_B79iArycXaMensZ75,true,Handl Tyrol GmbH,monika.krahl@handltyrol.at,Monika,Monika,,,reviewed,reviewed
+lea_ZJ5cBjWygthATC3dn,true,Eckes-Granini Group GmbH,frank.wohlfarth@eckes-granini.com,Frank,Frank,,,reviewed,reviewed
+lea_QNJLPgex4aCANrX6f,true,Hengstenberg GmbH & Co. KG,gerd.pfeiffer@hengstenberg.de,Gerd,Gerd,,,reviewed,reviewed
+lea_SsqnjvqsugRGttKSr,true,Hilcona AG,klaus.loferer@hilcona.com,Klaus,Klaus,,,reviewed,reviewed
+lea_fbWSSe4wWjm5zGfxB,true,GOLDSTEIG Käsereien Bayerwald GmbH,bestellung@goldsteig.de,Dagmar,Dagmar,,09971/8441121,reviewed,reviewed
+lea_KdccpT4sZcRZFv779,true,Tante Fanny,c.haiges@tantefanny.at,Christian,Christian,https://www.linkedin.com/in/christian-haiges-a4b126ab,,emailsUnsubscribed,unsubscribed
+lea_MYycfbHNXzwk9svhH,true,Tofutown.com GmbH,rebecca.schnichels@tofutown.com,Rebecca,Rebecca,,,reviewed,reviewed
+lea_WefENYkeE5k5RdLza,true,Hemme Milch GmbH & Co. Vertriebs KG,a.hemme@hemme-milch.de,Alwine,Alwine,https://www.linkedin.com/in/alwine-hemme-b0356418a,,reviewed,reviewed
+lea_q9NQ4hKbRxwdPC4Qv,true,J. & W. Stollenwerk oHG,j.hannott@st-konserven.de,Jens,Jens,,,reviewed,reviewed
+lea_bRxtbeznRGhtXeAi3,true,Molkerei Söbbeke GmbH,thomas.dellschau@soebbeke.de,Thomas,Thomas,,02565/93030,reviewed,reviewed
+lea_D8evkwNK9zczAA8Tk,true,Riemerschmid Sirup Erding GmbH,erik.maas@underberg.de,Erik,Erik,,00498122/411139,reviewed,reviewed
+lea_RpiG2jWfZ3pdM68GA,true,Schwarzwaldmilch GmbH,jasmin.moebius@schwarzwaldmilch.de,Jasmin,Jasmin,,,reviewed,reviewed
+lea_avCAtjGaWKRko9J8J,true,Bayernland eG,armin.dechant@bayernland.de,Armin,Armin,,,reviewed,reviewed
+lea_SXr49tPNadGxnH7zf,true,Werner Lauenroth Fischfeinkost GmbH,m.lauenroth@werner-lauenroth.de,Malte,Malte,,,reviewed,reviewed
+lea_Tf3SRdpY7M7ppNjhD,true,Treets Piasten,andrea.taupitz@treetspiasten.com,Andrea,Andrea,,,reviewed,reviewed
+lea_nziyHwa958Sqt8TwY,true,WUNDmed GmbH & Co. KG,jeigensee@wundmed.de,Jürgen,Jürgen,,,reviewed,reviewed
+lea_rfxyfEjM9sdc2oojB,true,Löwenanteil GmbH,thomas@loewenanteil.com,Thomas,Thomas,,,reviewed,reviewed
+lea_BwbFJcEPypsDBGDZF,true,Frosta Tiefkühlkost GmbH,ben.windhorst@frosta.com,Ben,Ben,,,reviewed,reviewed
+lea_eFHAqMSxFX4yt4oF9,true,Wiesbauer Österreichische Wurstspezialitäten GmbH,thomas.schmiedbauer@wiesbauer.at,Thomas,Thomas,,,reviewed,reviewed
+lea_hB4npR7vJAk7dQskY,true,Goldeck Süßwaren GmbH ( Zetti ),carsten.kaiser@zetti.de,Carsten,Carsten,,+493415502670,reviewed,reviewed
+lea_ZPeaxpJYX2YwjDuML,true,Inspiriti Beverages GmbH,r.pum@inspiriti.at,Rafael,Rafael,,,reviewed,reviewed
+lea_22DicLJyZdffApydQ,true,Hemme Milch GmbH & Co. Vertriebs KG,u.braumann@hemme-milch.de,Ulla,Ulla,,,reviewed,reviewed
+lea_iX2xdAECC7nrND5hP,true,Sal de Ibiza GmbH,carolina.geier@saldeibiza.com,Carolina,Carolina,https://www.linkedin.com/in/carolinageier,,reviewed,reviewed
+lea_KB45GkQCc3uHffD7S,true,Naturkost Schramm,t.hofstetter@schramm-naturkost.com,Tobias,Tobias,,,reviewed,reviewed
+lea_WJgKhkA9vGFAzCoMD,true,DEST Beverage GmbH,timur@owies.de,Timur,Timur,,,reviewed,reviewed
+lea_pdHpsMarbuArrPgjy,true,Heinrich Kühlmann GmbH - Food Service,edv@kuehlmann.de,Thomas,Thomas,,,reviewed,reviewed
+lea_ioaDKzzu929L8wEwa,true,Reckitt Benckiser,christine.kronauer@reckitt.com,Christine,Christine,,,reviewed,reviewed
+lea_orzifTyspCfYhMjPN,true,Frankonia Schokoladenwerke GmbH,g.goldstein@schoko-frankonia.de,G.,Frau Goldstein,,,reviewed,reviewed
+lea_uZuQKtZgDX2LSzK9b,true,nu3 GmbH,lucas.bott@nu3.de,Lucas,Lucas,,,reviewed,reviewed
+lea_SBSpXrC9ZC7YKgS4C,true,Naturglück GmbH,hallo@natur-glueck.com,Andreas,Andreas,,+4917647795572,reviewed,reviewed
+lea_8xJeRXou2QZsPfrH7,true,Pip & Nut,mari@pipandnut.com,Mari,Mari,,,reviewed,reviewed
+lea_wtEqhC8R8MoKNmdFs,true,SlooOW,alexandra.weber@bio-breadness.com,Alexandra,Alexandra,,,reviewed,reviewed
+lea_PK8WyGqJQ8DwsBQ2E,true,SD Sugar Daddies GmbH,lars@sdsugardaddies.de,Lars,Lars,,"0163/6374570,0221/67029000",reviewed,reviewed
+lea_LkQCzcKgdA9oFvzbZ,true,Goodsport UG,johannes.berndt@goodsport.de,Johannes,Johannes,,,reviewed,reviewed
+lea_bHGPSc2h8tiByLzGs,true,Fruchthansa GmbH,uta.weesbach@fruchthansa.de,Uta,Uta,,,reviewed,reviewed
+lea_dxQoWwGXkjTsG8PEq,true,Fruchthansa GmbH,timo.heep@fruchthansa.de,Timo,Timo,,,reviewed,reviewed
+lea_j8X932SEDJLTf3AXr,true,Lavazza Professional Germany GmbH,carstenhagemann@klix-kaffeeautomaten.de,Carsten,Carsten,,,reviewed,reviewed
+lea_nDpBuzsYzBDTBQfS7,true,Lavazza Professional Germany GmbH,niklas_reich@klix-kaffeeautomaten.de,Niklas,Niklas,,,reviewed,reviewed
+lea_DB4utujiv72HSQ4Lx,true,Haak & Christ GmbH,philip.kettler@haak-christ.de,Philip,Philip,,,reviewed,reviewed
+lea_FnPbrPZDFtCX25occ,true,Wiener Feinbäckerei Heberer GmbH,sandra.heberer@heberer.de,Sandra,Sandra,,,reviewed,reviewed
+lea_yKh7MhbynL9FJwt6r,true,Mowi Harsum GmbH,dennis.lassalle@mowi.com,Dennis,Dennis,,,reviewed,reviewed
+lea_xhFRFHBwynbfJvxQp,true,Manss GmbH Frischeservice,thomas_schippl@manss.de,Thomas,Thomas,,,reviewed,reviewed
+lea_Eh3CMa7yDvswpxbde,true,Upländer Bauernmolkerei GmbH,virtel@bauernmolkerei.de,Michael,Michael,https://www.linkedin.com/in/michael-virtel-19455126,,reviewed,reviewed
+lea_uz84zGG7xNjMiqhoB,true,Manss GmbH Frischeservice,fblume@manss.de,Frank,Frank,,,reviewed,reviewed
+lea_fKswhZEX9Tnh2sna8,true,BIO-FROST Westhof GmbH,lask.berit@bio-frost.de,Berit,Berit,,,reviewed,reviewed
+lea_XsjQgsXZauXnwyvXx,true,Brandt Backwaren Vertriebs GmbH,h.reinke@brandt-gmbh.de,Henning,Henning,,,reviewed,reviewed
+lea_4mEWDXRjseWAC7Ad7,true,Recker Convenience GmbH,artur.fritz@recker-convenience.de,Artur,Artur,,,reviewed,reviewed
+lea_uWThoh8f5iiTHQjbo,true,Recker Convenience GmbH,peter.debbeler@recker-convenience.de,Peter,Peter,,,reviewed,reviewed
+lea_FBHWaEriGCuojGB83,true,Gartenbauzentrale e.G.,vu.dang@gartenbauzentrale.de,Vu,Vu,,,reviewed,reviewed
+lea_9FRg9BAyDDJQNHkBs,true,Mainfrucht GmbH & Co. KG,haerterich-ilonka@gruenewald-international.com,Haerterich,Haerterich,,,reviewed,reviewed
+lea_ZaPQYCtFupCTv9x9Q,true,"Schäfer, dein Bäcker GmbH & Co. KG",daniel.primke@schaefer-dein-baecker.de,Daniel,Daniel,,,reviewed,reviewed
+lea_N7qtrGXCYtbXHMmAT,true,Dole Europe GmbH,carlos.arango@dole.com,Carlos,Carlos,,,reviewed,reviewed
+lea_Ez3EK72oJYowxonrC,true,Moet Hennessy Deutschland GmbH,lklein@moet-hennessy.de,Lisa,Lisa,,,reviewed,reviewed
+lea_FSLWEENS9RPnv6HdT,true,Leonhard Moos & Butzen GmbH,julia.caspers@moos-butzen.de,Julia,Julia,,,reviewed,reviewed
+lea_y5NsvNqy5PbY5cZAP,true,Wild Eppingen,martina.heidelberger@wild-eppingen.de,Martina,Martina,,,reviewed,reviewed
+lea_r56nxJtvDoJ5u4HL6,true,Mainfrucht GmbH & Co. KG,ding-thomas@gruenewald-international.com,Dr.,Dr.,,,reviewed,reviewed
+lea_cZNWXeJSYfa5CR7js,true,HG Food GmbH,finia.kriete@geber-food.de,Finia,Finia,,,reviewed,reviewed
+lea_2Wr2tKh2AqjfnQvpJ,true,BÄKO Württemberg eG,max.lauser@baeko-wuerttemberg.de,Max,Max,,,reviewed,reviewed
+lea_khJybSBwm2YJweWs8,true,Hamburg Coffee Company Hacofco mbH,n.gopakumar@hacofco.de,Nimisha,Nimisha,,,reviewed,reviewed
+lea_kscP288SLg9qdXeWk,true,Abbelen GmbH,hillens@abbelen.de,Stefanie,Stefanie,https://www.linkedin.com/in/stefanie-hillen-85163a1b9,,reviewed,reviewed
+lea_PZXtvxtosbWnmq7F5,true,Bacardi Limited,lisa_worring@bacardilimited.com,Lisa,Lisa,,,reviewed,reviewed
+lea_irGQtAtw65h9PmaD4,true,Obst vom Bodensee Vertriebsgesellschaft mbH,martina.mattes@obst-vom-bodensee.de,Martina,Martina,,,reviewed,reviewed
+lea_YjhkFo3mJn8XxN48k,true,Naturata AG,p.fernandes@naturata.de,Pedro,Pedro,,,reviewed,reviewed
+lea_sMXPJhv4G7rQT4Y5r,true,Ziegler Käsespezialitäten,frank.barchfeld@ziegler-kaese.de,Frank,Frank,,,reviewed,reviewed
+lea_tEthqTKqfAb4JEJPS,true,Konrad Bäckerei und Café GmbH,sven.konrad@konrad-baeckerei.de,Sven,Sven,,,reviewed,reviewed
+lea_RHWwxwa9GmAFSRHLe,true,Erste Tegernseer Kaffeerösterei GmbH,armin.huskanovic@web.de,Armin,Armin,,,reviewed,reviewed
+lea_Dgnd3YYRfQjhNXDc2,true,S.A.M. Spices and more GmbH,florian.emmerich@spices-and-more.de,Florian,Florian,,,reviewed,reviewed
+lea_HFG33XkJwYzobsFE4,true,Promeat GmbH,valentin.jessen@promeat.eu,Valentin,Valentin,,,reviewed,reviewed
+lea_oFARqmhnWw4nygATD,true,naschlabor GmbH,c.kapikiran@naschlabor.de,Can,Can,,,reviewed,reviewed
+lea_tzhFhunfqbkdq5HTk,true,BrauDich GmbH,martin.walter@braudich.beer,Martin,Martin,,,reviewed,reviewed
+lea_tpiNQPmM56z4je7q8,true,Rotkäppchen-Mumm,matthias.metzger@rotkaeppchen-mumm.de,Matthias,Matthias,,,reviewed,reviewed
+lea_JLjEBdq67KCJEBrCB,true,Rotkäppchen-Mumm,annika.weber@rotkaeppchen-mumm.de,Annika,Annika,,,reviewed,reviewed
+lea_qYri3RnRtYpXcR8Rz,true,Prima Menü GmbH,kay.koechy@primamenue.de,Kay,Kay,,,reviewed,reviewed
+lea_7vAAa7sKeTLFx3dKy,true,Aquapharm Health & Nutrition GmbH,b.rad@aquapharm.de,Bastian,Bastian,,,reviewed,reviewed
+lea_iy7uFxmHG3gZFaSFp,true,Dan Cake Deutschland GmbH,marc.niemeyer@dancake.de,Marc,Marc,,,reviewed,reviewed
+lea_CPu7Xxa6a8coGH6pu,true,Delikant Feinkost GmbH,biegert@delikant.de,Thorben,Thorben,,,reviewed,reviewed
+lea_EPSzvMwgXiv83fqaN,true,Bell Food Group Ltd,kolja.stolze@bell.ch,Kolja,Kolja,,,reviewed,reviewed
+lea_neWAXMX4PAbxgwLgq,true,Bell Food Group Ltd,kalpesh.lakhani@bellfoodgroup.com,Kalpesh,Kalpesh,,,reviewed,reviewed
+lea_xWvdhXiqSL8o2kSQu,true,Florida-Eis Manufaktur GmbH,thorsten.lorenzen@floridaeis.de,Thorsten,Thorsten,,,reviewed,reviewed
+lea_mxeioDiXg6ogmgTXe,true,Westfalia Fruit GmbH,graham.young@westfaliafruit.com,Graham,Graham,,,reviewed,reviewed
+lea_jvRpoAdcHLCpxEkZr,true,HANNA-Feinkost AG,patrick.schuster@hanna.de,Patrick,Patrick,,,reviewed,reviewed
+lea_mWFM8ohD8ToMh44c6,true,Bäckerei Hendker GmbH,louisahendker@baeckerei-hendker.de,Louisa,Louisa,,,reviewed,reviewed
+lea_aMgD8TpcQvuA4xLrh,true,Bell Food Group Ltd,thorben.wiegmann@bellfoodgroup.com,Thorben,Thorben,,,reviewed,reviewed
+lea_qKzNomSJZnNzgjSDD,true,Bio-Zentrale Naturprodukte GmbH,kathrin.feldmaier@biozentrale.de,Kathrin,Kathrin,https://www.linkedin.com/in/kathrin-feldmaier-122132217,,reviewed,reviewed
+lea_RjRkAkxCkZuGAJDZ4,true,I&B Haferwelt GmbH,gillishaan@gmail.com,Gill,Gill,,+4915752636272,reviewed,reviewed
+lea_WFP6YfxuwraxGQrq4,true,Börner-Eisenacher GmbH,deister@boerner-eisenacher.de,Witali,Witali,,,reviewed,reviewed
+lea_df9SBQWTcgyW5MTZn,true,10X Innovation GmbH & Co. KG,rene.korte@10xinnovation.de,Rene,Rene,,,reviewed,reviewed
+lea_AsuqydYf3jceyv4zR,true,DP Supply GmbH,hans.visscher@dpsupply.com,Hans,Hans,,,reviewed,reviewed
+lea_DYLbatD6pgyZxxFev,true,Rotkäppchen-Mumm,jennifer.hug@rotkaeppchen-mumm.de,Jennifer,Jennifer,,,reviewed,reviewed
+lea_5uYkfh63h34TdCGwP,true,Heiner Weiß GmbH,jan.weiss@heiner-weiss.de,Jan,Jan,,,reviewed,reviewed
+lea_uSZJcHtnkAeL36yoG,true,NORDSEE GmbH,hazal.tikir@nordsee.com,Hazal,Hazal,,+494711302,reviewed,reviewed
+lea_xotfMFmXYmhYX6eDw,true,Smart Organic,yani.dragov@smartorganic.com,Yani,Yani,,,reviewed,reviewed
+lea_afACoT9rz62t8ojoy,true,etepetete,chris@etepetete-bio.de,Chris,Chris,,,reviewed,reviewed
+lea_Y9sPtWuaXxv7D2dBF,true,KL-Global Procurement,m.rammrath@kl-global.net,Michael,Michael,,,reviewed,reviewed
+lea_7EWwRnChp93pDZh6K,true,Vortella Lebensmittelwerk W.Vortmeyer GmbH,georg_eggers@gmx.de,Georg,Georg,,,reviewed,reviewed
+lea_FvGToEpSHP9pennWT,true,Keunecke Feinkost GmbH,h.thunack@keunecke-feinkost.de,Hendrik,Hendrik,,,reviewed,reviewed
+lea_s28CavDt4X4C5cpJy,true,Privatmolkerei Naarmann GmbH,martin.vollenbroeker@naarmann.de,Martin,Martin,https://www.linkedin.com/in/martin-vollenbröker-bb291250,'+495973|30956,reviewed,reviewed
+lea_9TTxyNB6Lp4n32AdR,true,NORDSEE GmbH,raphael.gansch@nordsee.com,Dr.,Dr.,,+494711302,reviewed,reviewed
+lea_DurNwjzx7goQu8kAd,true,Sutterlüty,klaus.kohler@sutterluety.at,Matthias,Matthias,,,reviewed,reviewed
+lea_b7G2Xq7a8AS2yC3hQ,true,SavedSeconds,dominik.mayr@savedseconds.com,Dominik,Dominik,,+4915228407478,reviewed,reviewed
+lea_9EzucEYYPSP99rMvE,true,El Puente GmbH,jette.ladiges@el-puente.de,Jette,Jette,,,reviewed,reviewed
+lea_W2tCWaqhiEqtXDyFp,true,RUNGIS express GmbH,benedicte.fieux@rungisexpress.com,Bénédicte,Bénédicte,,,reviewed,reviewed
+lea_5k67XTquexBmnTugz,true,Albert Heijn BV,prasad.hegde@ah.nl,Prasad,Prasad,,,reviewed,reviewed
+lea_RJci8wWzxgfhcLwwn,true,None,gabriel.croyere@neoway-consulting.fr,Gabriel,Gabriel,,+33783547885,reviewed,reviewed
+lea_m94KkRETMqbPLEcT4,true,El Puente GmbH,rafael.ocheduska@el-puente.de,Rafael,Rafael,,,reviewed,reviewed
+lea_4u9tC3H5t7NyXk8vj,true,ERCOLI S.R.L.,amministrazione@pommedor.it,Manola,Manola,,+390734842176,reviewed,reviewed
+lea_ppeAbnLpnj3oYZmMv,true,Delica AG,alexandra.troller@delica.com,Alexandra,Alexandra,,0585646000,reviewed,reviewed
+lea_pgKQeTBeHCkPaeNPf,true,Albert Heijn BV,henk-van.harn@ah.nl,Henk,Henk,,,reviewed,reviewed
+lea_WNGND9sY8NfTJtAhq,true,Peddler.com,max.fortuin@peddler.com,Max,Max,,,reviewed,reviewed
+lea_Stvw7MChABpvgzh9r,true,Smart Organic,georgi.vasilev@smartorganic.com,Georgi,Georgi,,+359893688791,reviewed,reviewed
+lea_bGYuGohWZwYPouQvx,true,Albert Heijn BV,dennis.pereira@ah.nl,Dennis,Dennis,,,reviewed,reviewed
+lea_eMwXiFG4TbM2fbLY3,true,METRO/MAKRO,lars.eden@metro-cc.de,Lars,Lars,,,reviewed,reviewed
+lea_ghwovf8bsgieX8mHJ,true,PAPER & TEA,chettinger@paperandtea.com,Christian,Christian,,,reviewed,reviewed
+lea_hGhJFrxmvuh4TkBts,true,Delica AG,marco.jacomet@delica.com,Marco,Marco,,0585646000,reviewed,reviewed
+lea_bTdwm8WtagpJxTroQ,true,What The Food GmbH,michael@whatthefood.company,Michael,Michael,,,reviewed,reviewed
+lea_cQL42RXSssSgNarkN,true,Tchibo,anne.keller@tchibo-coffeeservice.de,Anne,Anne,,,reviewed,reviewed
+lea_J6nqFxx8xm9HhvZqC,true,Griesson - de Beukelaer GmbH & Co. KG,alexander@griesson-debeukelaer.de,Alexander,Alexander,,,reviewed,reviewed
+lea_PPe5RKam5FfGoQJyf,true,Niederrhein-Gold Tersteegen GmbH & Co. KG,g.schweitzer@niederrhein-gold.de,Guido,Guido,,,reviewed,reviewed
+lea_qvNo4CjcQJrkhqDWM,true,Niederrhein-Gold Tersteegen GmbH & Co. KG,f.viehl@niederrhein-gold.de,Friedrich,Friedrich,,,reviewed,reviewed

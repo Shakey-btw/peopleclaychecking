@@ -7,6 +7,7 @@ export default function Home() {
   const navItems = [
     { id: "network-commit", label: "NETWORK UPLOAD", href: "/network-commit" },
     { id: "company-checking", label: "PEOPLE CHECKING", href: "/company-checking" },
+    { id: "approach", label: "APPROACH", href: "/approach" },
   ];
 
   return (

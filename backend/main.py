@@ -5,7 +5,7 @@ Controls Lemlist and Pipedrive integrations
 """
 
 import logging
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from lemlist import LemlistDataPuller
 from pipedrive import PipedriveDataPuller
 
@@ -104,6 +104,69 @@ class DataSyncOrchestrator:
             
         except Exception as e:
             logger.error(f"Full sync failed: {e}")
+            raise
+    
+    def sync_filtered_data(self, filter_url: str, status_filter: Optional[str] = None) -> Dict[str, Any]:
+        """Sync filtered Pipedrive data and perform matching"""
+        try:
+            logger.info(f"Starting filtered data synchronization with URL: {filter_url}")
+            
+            # Step 1: Sync from Lemlist (if needed)
+            lemlist_data = self.sync_lemlist_data(status_filter)
+            
+            # Step 2: Sync filtered data from Pipedrive
+            if not self.pipedrive_puller:
+                logger.warning("Pipedrive API key not provided, skipping Pipedrive sync")
+                return {'error': 'Pipedrive API key not provided'}
+            
+            logger.info("Starting filtered Pipedrive data sync...")
+            filtered_pipedrive_data = self.pipedrive_puller.pull_filtered_data(filter_url)
+            
+            print(f"\nFiltered Pipedrive Data saved to:")
+            print(f"  Filter ID: {filtered_pipedrive_data['filter_id']}")
+            print(f"  Filter Name: {filtered_pipedrive_data['filter_name']}")
+            print(f"  Organizations: {filtered_pipedrive_data['organizations_count']}")
+            print(f"  SQLite Database: pipedrive.db")
+            print(f"    Filtered organizations table: filtered_organizations")
+            print(f"    User filters table: user_filters")
+            
+            logger.info("Filtered synchronization completed!")
+            
+            return {
+                'lemlist_data': lemlist_data,
+                'filtered_pipedrive_data': filtered_pipedrive_data,
+                'status': 'completed'
+            }
+            
+        except Exception as e:
+            logger.error(f"Filtered sync failed: {e}")
+            raise
+    
+    def get_user_filters(self) -> List[Dict[str, Any]]:
+        """Get all user filters"""
+        try:
+            if not self.pipedrive_puller:
+                logger.warning("Pipedrive API key not provided")
+                return []
+            
+            return self.pipedrive_puller.get_user_filters()
+            
+        except Exception as e:
+            logger.error(f"Failed to get user filters: {e}")
+            return []
+    
+    def delete_user_filter(self, filter_id: str):
+        """Delete a user filter"""
+        try:
+            if not self.pipedrive_puller:
+                logger.warning("Pipedrive API key not provided")
+                return
+            
+            self.pipedrive_puller.delete_user_filter(filter_id)
+            logger.info(f"Deleted user filter: {filter_id}")
+            
+        except Exception as e:
+            logger.error(f"Failed to delete user filter: {e}")
             raise
 
 def main():

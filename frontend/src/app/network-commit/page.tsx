@@ -15,6 +15,7 @@ export default function NetworkCommit() {
   const navItems = [
     { id: "network-commit", label: "NETWORK UPLOAD", href: "/network-commit" },
     { id: "company-checking", label: "PEOPLE CHECKING", href: "/company-checking" },
+    { id: "approach", label: "APPROACH", href: "/approach" },
   ];
 
   // Reset function to return to initial state
