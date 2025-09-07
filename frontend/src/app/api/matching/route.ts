@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const scriptPath = path.join(process.cwd(), "../backend/filtered_matching.py");
     const backendDir = path.join(process.cwd(), "../backend");
     
-    return new Promise((resolve) => {
+    return new Promise<NextResponse>((resolve) => {
       let command: string;
       let args: string[];
 

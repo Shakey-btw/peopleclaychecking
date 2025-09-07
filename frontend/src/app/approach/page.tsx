@@ -14,7 +14,7 @@ interface PieData {
 export default function ApproachPage() {
   const svgRef = useRef<SVGSVGElement>(null);
   const [pieData, setPieData] = useState<PieData | null>(null);
-  const [selectedFilterId, setSelectedFilterId] = useState<string | null>(null);
+  const [, setSelectedFilterId] = useState<string | null>(null);
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [newlyAddedFilterId, setNewlyAddedFilterId] = useState<string | null>(null);
   const [showFilterInput, setShowFilterInput] = useState(false);
@@ -113,7 +113,7 @@ export default function ApproachPage() {
 
     // Use dynamic data from state - running is the light gray piece, notActive is the black piece
     const data = [pieData.notActive, pieData.running]; // Black piece first, then running piece
-    const total = pieData.notActive + pieData.running;
+    // const total = pieData.notActive + pieData.running; // Unused variable
 
     // Set up dimensions - increased to accommodate hover text
     const pieSize = 360;
@@ -150,13 +150,13 @@ export default function ApproachPage() {
       .cornerRadius(10); // 10px corner radius
 
     // Get or create arcs group
-    let arcs = g.selectAll(".arc");
+    let arcs = g.selectAll<SVGGElement, d3.PieArcDatum<number>>(".arc");
 
     // Check if this is the first render or if we have previous data for smooth transitions
     const isFirstRender = previousPieDataRef.current === null;
-    const previousData = previousPieDataRef.current ? 
-      [previousPieDataRef.current.notActive, previousPieDataRef.current.running] : 
-      data;
+    // const previousData = previousPieDataRef.current ? 
+    //   [previousPieDataRef.current.notActive, previousPieDataRef.current.running] : 
+    //   data; // Unused variable
 
     // Create centered label group for donut hole (only if it doesn't exist)
     let centerGroup = g.select<SVGGElement>(".center-label");
@@ -169,29 +169,29 @@ export default function ApproachPage() {
     // Handle smooth transitions for arc paths
     if (isFirstRender) {
       // First render - create arcs without transition
-      arcs = (arcs as any).data(pie(data))
+      arcs = arcs.data(pie(data))
         .enter()
         .append("g")
         .attr("class", "arc");
 
       arcs.append("path")
-        .attr("d", (d: any) => arc(d))
-        .attr("fill", (d: any, i: number) => i === 0 ? "#1C1C1C" : "#E8E8E8")
+        .attr("d", (d: d3.PieArcDatum<number>) => arc(d))
+        .attr("fill", (d: d3.PieArcDatum<number>, i: number) => i === 0 ? "#1C1C1C" : "#E8E8E8")
         .style("cursor", "pointer")
-        .each(function(d: any) { (this as any)._current = d; }); // Store current data for future transitions
+        .each(function(d: d3.PieArcDatum<number>) { (this as SVGPathElement & { _current?: d3.PieArcDatum<number> })._current = d; }); // Store current data for future transitions
     } else {
       // Subsequent renders - smooth transitions
-      arcs = (arcs as any).data(pie(data));
+      arcs = arcs.data(pie(data));
 
       // Update existing paths with smooth transitions
       arcs.select("path")
         .transition()
         .duration(800)
         .ease(d3.easeCubicInOut)
-        .attrTween("d", function(d: any) {
-          const current = (this as any)._current;
+        .attrTween("d", function(d: d3.PieArcDatum<number>) {
+          const current = (this as SVGPathElement & { _current?: d3.PieArcDatum<number> })._current;
           const interpolate = d3.interpolate(current, d);
-          (this as any)._current = interpolate(0);
+          (this as SVGPathElement & { _current?: d3.PieArcDatum<number> })._current = interpolate(0);
           return function(t: number) {
             return arc(interpolate(t)) || "";
           };
@@ -203,10 +203,10 @@ export default function ApproachPage() {
         .attr("class", "arc");
 
       newArcs.append("path")
-        .attr("d", (d: any) => arc(d))
-        .attr("fill", (d: any, i: number) => i === 0 ? "#1C1C1C" : "#E8E8E8")
+        .attr("d", (d: d3.PieArcDatum<number>) => arc(d))
+        .attr("fill", (d: d3.PieArcDatum<number>, i: number) => i === 0 ? "#1C1C1C" : "#E8E8E8")
         .style("cursor", "pointer")
-        .each(function(d: any) { (this as any)._current = d; });
+        .each(function(d: d3.PieArcDatum<number>) { (this as SVGPathElement & { _current?: d3.PieArcDatum<number> })._current = d; });
 
       // Remove old arcs (if any)
       arcs.exit()

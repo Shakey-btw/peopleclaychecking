@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import sqlite3 from "sqlite3";
 import path from "path";
 
+interface MatchingSummary {
+  matching_companies: number;
+  non_matching_pipedrive: number;
+  filter_name: string | null;
+  created_at: string;
+}
+
 export async function GET(request: NextRequest) {
   try {
     // Get filterId from query parameters
@@ -11,7 +18,7 @@ export async function GET(request: NextRequest) {
     // Path to your results database
     const dbPath = path.join(process.cwd(), "../backend/results.db");
     
-    return new Promise((resolve) => {
+    return new Promise<NextResponse>((resolve) => {
       const db = new sqlite3.Database(dbPath, (err) => {
         if (err) {
           console.error("Error opening database:", err);
@@ -22,7 +29,7 @@ export async function GET(request: NextRequest) {
 
       // Build query based on filterId
       let query: string;
-      let params: any[];
+      let params: (string | number)[];
       
       if (filterId === null || filterId === 'null' || filterId === '') {
         // Get results for "All Organizations" (filter_id is NULL or empty)
@@ -48,7 +55,7 @@ export async function GET(request: NextRequest) {
 
       console.log(`Fetching pie data for filterId: ${filterId}`);
 
-      db.get(query, params, (err, row: any) => {
+      db.get(query, params, (err, row: MatchingSummary | undefined) => {
         if (err) {
           console.error("Error querying database:", err);
           resolve(NextResponse.json({ error: "Query failed" }, { status: 500 }));
