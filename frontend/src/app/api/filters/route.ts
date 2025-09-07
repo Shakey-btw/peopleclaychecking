@@ -3,21 +3,12 @@ import sqlite3 from "sqlite3";
 import path from "path";
 import { spawn } from "child_process";
 
-interface UserFilter {
-  filter_id: number | null;
-  filter_name: string | null;
-  filter_url: string | null;
-  organizations_count: number | null;
-  created_at: string | null;
-  last_used: string | null;
-}
-
 export async function GET() {
   try {
     // Path to the backend pipedrive database
     const dbPath = path.join(process.cwd(), "../backend/pipedrive.db");
     
-    return new Promise<NextResponse>((resolve) => {
+    return new Promise((resolve) => {
       const db = new sqlite3.Database(dbPath, (err) => {
         if (err) {
           console.error("Error opening database:", err);
@@ -37,7 +28,7 @@ export async function GET() {
           last_used
         FROM user_filters 
         ORDER BY created_at DESC
-      `, (err, rows: UserFilter[]) => {
+      `, (err, rows: any[]) => {
         if (err) {
           console.error("Error querying user_filters table:", err);
           resolve(NextResponse.json({ error: "Query failed" }, { status: 500 }));
@@ -79,7 +70,7 @@ export async function POST(request: NextRequest) {
     // Path to the filtered_matching.py script
     const scriptPath = path.join(process.cwd(), "../backend/filtered_matching.py");
     
-    return new Promise<NextResponse>((resolve) => {
+    return new Promise((resolve) => {
       // Execute the Python script with the filter URL using the virtual environment
       const pythonProcess = spawn('bash', ['-c', `source venv/bin/activate && python3 ${scriptPath} "${filterUrl}"`], {
         cwd: path.join(process.cwd(), "../backend"),

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 
 interface Filter {
   filter_id: string | null;
@@ -55,7 +54,7 @@ export default function FilterSelector({ className = "", onFilterSelect, refresh
         }
       }
     }
-  }, [filters, newlyAddedFilterId, onFilterSelect, selectedFilterId]);
+  }, [filters, newlyAddedFilterId]);
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -199,7 +198,7 @@ export default function FilterSelector({ className = "", onFilterSelect, refresh
                   onClick={handleAddNewClick}
                   className="flex items-center gap-1 hover:opacity-70 transition-opacity cursor-pointer"
                 >
-                  <Image src="/PlusIcon.svg" alt="Add" width={8} height={8} />
+                  <img src="/PlusIcon.svg" alt="Add" className="w-2 h-2" />
                   <span className="text-[12px] leading-[16px] uppercase font-light text-black tracking-[0.03em]">ADD NEW</span>
                 </button>
               </div>
@@ -208,6 +207,7 @@ export default function FilterSelector({ className = "", onFilterSelect, refresh
           <div className="flex flex-col gap-1 max-w-[200px]">
           {filters.map((filter) => {
             const isSelected = selectedFilterId === filter.filter_id;
+            const isOriginalData = filter.filter_id === null;
             
             return (
               <button
